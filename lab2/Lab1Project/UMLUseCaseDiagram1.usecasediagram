@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="5ddb7715-7915-48c5-9951-ad7cdfb90951" name="UMLUseCaseDiagram1" linkedPackageId="3da41e5a-bbfd-401b-9995-9e1824e8816c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="4f55c13d-bff8-4073-be58-0f5ff5a96c06" name="Player" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a3932cfb-1163-4157-9275-e23ddfbc75d9" />
+        <targetEnds>
+          <association Id="93047176-729e-4746-a72e-aec239399b0b" isDerived="false" sourceEndRoleName="Player" targetEndRoleName="Menu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5a2a4136-d0f9-4c52-9467-d56a2c218140" LastKnownName="Menu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="753871cf-d7db-42a8-b784-e4eacad399eb" name="Player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2261d38c-e261-4ba0-ad32-ac3f0783b591" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6140f0b2-6549-4598-935e-4388bdb8654c" name="Menu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b1003448-c19d-458d-a508-bb2889740ea5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dc803f13-2acf-4505-b18f-dc58e71ee97a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f5c5899e-3185-4d95-8e2f-25493a4d503a" name="Select level" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb79eb0c-2aaa-4a85-869b-d92a83fd30f7" />
+        <generalsInternal>
+          <generalization Id="e6bd9c0a-f0ec-49e3-b3fe-946c12ccc8d3" isSubstitutable="false">
+            <useCaseMoniker Id="5a2a4136-d0f9-4c52-9467-d56a2c218140" LastKnownName="Menu" />
+            <elementDefinition Id="89931cd0-bfbf-45de-8f5e-e3aaa1900968" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="f9e14737-6c23-4cb2-b49d-828656a1b8c2" isDerived="false" sourceEndRoleName="Select level" targetEndRoleName="Change ship" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="665d2691-dbc6-4e73-ba48-0e9ffb6bf348" LastKnownName="Change ship" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d17d12c-269a-4ee4-bb80-a3b70f3a0ebf" name="Select level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="027a795b-0195-4d53-a747-b292b67fb2e1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9be88045-c220-4d6c-845f-6ab66db978d8" name="Change ship" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f065a943-6632-4814-b6d0-0a68835545b4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a4f7461a-1126-41f3-8fbe-0326bc6dea4f" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a53207df-8c5f-4e2b-848d-ed371dd7f1d4" name="Play level" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d52a0c8b-bac4-4d14-9d7d-5d09dd821e90" />
+        <targetEnds>
+          <association Id="469c3d25-2a04-4d23-837e-d1781b446f4c" isDerived="false" sourceEndRoleName="Play level" targetEndRoleName="Show stats" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d1d63475-8236-457c-87f2-12d0d4f2236b" LastKnownName="Show level stats" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3c301d8f-0a08-4044-ab02-fd0017eec602" name="Play level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1a0a16cf-1bad-4def-a433-4e5a7125f1bb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="698eee99-1183-4eb2-ad6f-dfced8854cd2" name="Show stats" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0f1e6ae5-635b-42c6-8cc3-14e7d0e32b85" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e98e3288-7899-4695-a6ed-67854535aa81" />
+          </association>
+          <association Id="254ebb03-9956-4e92-8e64-81b81ef1314e" isDerived="false" sourceEndRoleName="Play level" targetEndRoleName="DB" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="ce2c2c5c-5d9b-40c4-ae7b-3391fa961098" LastKnownName="DB" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7b960a2e-4fcc-4a1c-ae12-b404724058a9" name="Play level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9b73f915-0360-4d23-846d-1efeef54c11a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cfbc5e50-2523-4396-8fb1-ed9cf292e722" name="DB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="473ddff4-867d-4c17-bfba-2f151490737c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e8f9a0b2-e764-4323-a935-a8396ebef5ea" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2e87332d-b4ff-473c-9e25-ada6f8c5ffab" name="Exit" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4a2cd14d-2a21-43a5-a46f-dd1d82ed4ca4" />
+        <generalsInternal>
+          <generalization Id="81e03bbe-1c0a-48c5-a4ba-87caaef7ad09" isSubstitutable="false">
+            <useCaseMoniker Id="5a2a4136-d0f9-4c52-9467-d56a2c218140" LastKnownName="Menu" />
+            <elementDefinition Id="99aee223-17fd-4c72-8390-e3d62ffc0b47" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5a2a4136-d0f9-4c52-9467-d56a2c218140" name="Menu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3ecbf748-3a23-4a09-83d0-0aef8f13f4ad" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b71e5cca-5e1d-45f6-98fb-04b729cd6016" name="Change settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="639f8bd1-8b13-4ad5-aae6-d4bb1eb7d441" />
+        <generalsInternal>
+          <generalization Id="f897f9f3-39f9-4cb5-8c52-42005dbd9f8c" isSubstitutable="false">
+            <useCaseMoniker Id="5a2a4136-d0f9-4c52-9467-d56a2c218140" LastKnownName="Menu" />
+            <elementDefinition Id="f47470a5-21a7-4b9c-95f3-4cbfa5ab0ccc" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="932910bb-d37b-4d96-955b-a3f758c6353d" name="Achivements" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1634bdf1-ab03-42ab-9368-1ea2d91e3d96" />
+        <suppliersInternal>
+          <dependency Id="a75bdaa2-945c-46a5-bcb4-0c2975dd0942">
+            <useCaseMoniker Id="a53207df-8c5f-4e2b-848d-ed371dd7f1d4" LastKnownName="Play level" />
+            <elementDefinition Id="e042538f-b570-4bb4-a04b-c8f7b5d260be" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="d07ef57c-ee69-4f0e-ba03-cf3c660dc9f2" isSubstitutable="false">
+            <useCaseMoniker Id="5a2a4136-d0f9-4c52-9467-d56a2c218140" LastKnownName="Menu" />
+            <elementDefinition Id="2f68869b-b94b-4786-9541-32ff4ca1180c" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d1d63475-8236-457c-87f2-12d0d4f2236b" name="Show level stats" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2b1b5210-d198-4c18-8ace-e8b7bfe556fc" />
+        <targetEnds>
+          <association Id="6bfdc29d-9915-4997-a764-a2d0654ac369" isDerived="false" sourceEndRoleName="Show level stats" targetEndRoleName="Select level" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f5c5899e-3185-4d95-8e2f-25493a4d503a" LastKnownName="Select level" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="73eb6dcb-9378-4a80-ab9d-069a3e0f52d5" name="Show level stats" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ba84fd68-84a4-450a-8f14-64e5bb6856aa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="711e2ad9-90c0-48e0-882b-b7d4f68d8f47" name="Select level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f20b2039-d5a3-4e5c-b0cd-acc395f14545" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fbe4b554-4a20-41ff-9171-32eb916684dd" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="665d2691-dbc6-4e73-ba48-0e9ffb6bf348" name="Change ship" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="10cdae37-36ea-4562-854a-816d58639cf2" />
+        <targetEnds>
+          <association Id="0052a076-eaaa-45d1-8dd0-19f37538ed38" isDerived="false" sourceEndRoleName="Change ship" targetEndRoleName="Play level" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a53207df-8c5f-4e2b-848d-ed371dd7f1d4" LastKnownName="Play level" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1493a0c6-aee2-47d3-94b0-160e39142f9e" name="Change ship" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4c9de456-ae36-40dd-b2fc-e405509bdcf7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a6021e7e-a720-42fd-860f-ed36afcfba38" name="Play level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="567a8493-f845-4aa3-b182-618bb56e782a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="09b6055e-73e0-466f-9a5c-15d61b224cb7" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="90249911-e22a-47cb-af7c-28ad096f7a6e" name="Shop" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4f99f22a-af70-420e-8f21-aee318325d03" />
+        <extendedCases>
+          <extend Id="76485fd8-973c-4a3e-8e06-2369527548d5">
+            <useCaseMoniker Id="665d2691-dbc6-4e73-ba48-0e9ffb6bf348" LastKnownName="Change ship" />
+            <elementDefinition Id="07dd92e2-c15e-457b-80ea-4c41e4c1a382" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2b4aedd8-72be-477a-8d39-87a0b23b7d22" name="Sound settings" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="77611939-1c67-45b9-bd1b-cdd2c4cbcbcb" />
+        <generalsInternal>
+          <generalization Id="bae7dea3-5064-4dcd-b8d6-dac55e1eff8b" isSubstitutable="false">
+            <useCaseMoniker Id="b71e5cca-5e1d-45f6-98fb-04b729cd6016" LastKnownName="Change settings" />
+            <elementDefinition Id="f0f2d7b2-a8c9-4d82-a3b6-fa484cc51665" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="987367a7-66bc-410c-82bb-e2cda3836714" isDerived="false" sourceEndRoleName="Sound settings" targetEndRoleName="DB" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="ce2c2c5c-5d9b-40c4-ae7b-3391fa961098" LastKnownName="DB" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1febf88d-dc64-4a01-92ab-2031ff77975c" name="Sound settings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="42b773ac-2d02-4090-bac7-2ab0e4e27d93" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="28e32992-c54d-4e7a-b9f2-f0d00087982b" name="DB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fb31c0c6-e1ff-47ba-97c4-5438736d80bc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2417684d-28b7-4daa-a9b6-8f85c0853c9b" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="259c141c-f98e-4bf5-9cb6-c9018c9e8904" name="Statistics" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a976c85f-bbd8-4063-93c9-67a420e19cac" />
+        <targetEnds>
+          <association Id="803abd89-768c-4880-9926-47a19777f43f" isDerived="false" sourceEndRoleName="Statistics" targetEndRoleName="DB" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="ce2c2c5c-5d9b-40c4-ae7b-3391fa961098" LastKnownName="DB" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b9bba854-3f19-482e-aefa-55c5224596a1" name="Statistics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1f1e69cd-ef91-427e-98da-dc05449f911c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f212defa-995e-46c8-a5e5-1258b4129127" name="DB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6e900c03-a247-4f23-bd09-027ea2f0d297" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f7a67ba7-7798-4148-81ab-07e4ec604269" />
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend Id="1dfea24c-c435-43a7-ac30-4920b0984990">
+            <useCaseMoniker Id="932910bb-d37b-4d96-955b-a3f758c6353d" LastKnownName="Achivements" />
+            <elementDefinition Id="66673d9c-820f-4db8-9e9c-04973de4a82b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ce2c2c5c-5d9b-40c4-ae7b-3391fa961098" name="DB" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4597275e-8f65-48b0-9b47-a8ae135bed15" />
+        <targetEnds>
+          <association Id="898437cb-91e7-410f-8231-1b710c193bf9" isDerived="false" sourceEndRoleName="DB" targetEndRoleName="Sound settings" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2b4aedd8-72be-477a-8d39-87a0b23b7d22" LastKnownName="Sound settings" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8ba1a1dd-cce3-4632-80ec-2466dc2d75d7" name="DB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="664de169-c6db-4690-8a8a-e5f2e5294d46" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d4a6c64-5fc4-424a-a453-bf79e7c2f9f8" name="Sound settings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e90fd7f0-9b1a-4d9b-86df-ab1018093dd0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="78a645dd-fe57-43ae-9c73-7c8500bcab24" />
+          </association>
+          <association Id="d1954f13-3fe9-41ac-88f7-5d2981fc4ed3" isDerived="false" sourceEndRoleName="DB" targetEndRoleName="Statistics" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="259c141c-f98e-4bf5-9cb6-c9018c9e8904" LastKnownName="Statistics" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="95232d65-6966-48bf-ae79-27c8974b4cbe" name="DB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2ba751ad-f2a3-4691-9737-4cd55b3c0d93" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="699f1e08-f67d-4ed5-8da7-9c509d6e5faa" name="Statistics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="58b20a4a-5477-43c1-9f1e-02f6c1b65e17" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a7ed2a63-cb72-42f5-b932-ff97e62f4658" />
+          </association>
+          <association Id="c104f85c-fd1d-4911-8670-fd4bcf9fefc5" isDerived="false" sourceEndRoleName="DB" targetEndRoleName="Select level" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f5c5899e-3185-4d95-8e2f-25493a4d503a" LastKnownName="Select level" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="59c2bd55-4b3b-4e39-978d-e131f414c6d0" name="DB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4b108242-5750-4a1d-9ee9-c50b3dcb815f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d12f21c8-9cf3-440c-a25e-c944bf937bc7" name="Select level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="985ded9b-3bea-4f5e-87c0-3b7505b42c0b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="16340a1c-5948-40bb-a9fa-53cf5061f9c8" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="3da41e5a-bbfd-401b-9995-9e1824e8816c" name="Lab1Project">
+    <elementDefinition Id="3bb891d5-39fe-453d-a2f3-efaec2327aa3" />
+    <profileInstances>
+      <packageHasProfileInstances Id="401b82d1-9f42-4d65-9b71-70db08f67636">
+        <profileInstance Id="14423c8a-9b3b-46f7-b99d-3abbf623d278" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="34a5a037-4eed-48cf-9c6f-05786f3d17c4">
+        <profileInstance Id="ed464e4a-cdef-4961-91ee-7e7e5bc8df1c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
